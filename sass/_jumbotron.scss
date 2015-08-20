@@ -1,10 +1,13 @@
 .jumbo-img {
-	width: 50%;
 	height:375px;
+	width: 84%;
 	position: relative;
 	top: 152px;
-	left:34%;
+	left:25%;
 	z-index: 20;
+	svg {
+		width: 80%;
+	}
 }
 
 .jumbo-header {

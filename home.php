@@ -3,7 +3,7 @@
 get_header();  ?>
 <?php get_template_part('jumbotron'); ?>
 <?php get_template_part('about'); ?>
-<div class="main">
+<div class="portfolio">
   <div class="container">
 
     <div class="content portfolio-content">
@@ -43,7 +43,11 @@ get_header();  ?>
                   ?>
                 </ul>
                 <?php the_content(); ?>
-                <a href="<?php the_field('live_url') ?>">VIEW IT LIVE</a> 
+                <a href="<?php the_field('live_url') ?>">
+                  <div class="view-live">
+                    VIEW IT LIVE
+                  </div>
+                </a> 
               </div>
               <!-- End of Item content -->
             <?php

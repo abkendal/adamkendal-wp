@@ -1,4 +1,4 @@
-	<div class="main" id="main">
+	<div class="jumbotron" id="jumbotron">
 		<div class="wrapper">
 			<div class="jumbo-img">
 

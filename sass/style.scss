@@ -8,17 +8,6 @@
 */
 
 
-
-// MEDIA QUERY VARIABLES
-// ****************************
-
-$xs: new-breakpoint(max-width 600px);
-$sm: new-breakpoint(max-width 800px);
-$md: new-breakpoint(max-width 1050px);
-$lg: new-breakpoint(min-width 1051px);
-
-
-
 // BOURBON AND NEAT AND SETUP
 // ****************************
 @import "bourbon/bourbon";
@@ -26,9 +15,18 @@ $lg: new-breakpoint(min-width 1051px);
 @import 'setup';
 @import 'normalize';
 
+// MEDIA QUERY VARIABLES
+// ****************************
+// 
+$xs: new-breakpoint(max-width 600px);
+$sm: new-breakpoint(max-width 800px);
+$md: new-breakpoint(max-width 1050px);
+$lg: new-breakpoint(min-width 1051px);
+
 @import 'typography';
 @import 'navigation';
 @import 'jumbotron';
+@import 'about';
 @import 'portfolio';
 @import 'sidebar';
 @import 'comments';
@@ -38,6 +36,17 @@ $lg: new-breakpoint(min-width 1051px);
 Default Styling
 ====================================
 */
+
+html,body {
+    height:100%;
+}
+
+.jumbotron,
+.about,
+.portfolio {
+	height: 100vh;
+}
+
 
 img {
 	max-width: 100%;

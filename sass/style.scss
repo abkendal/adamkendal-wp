@@ -7,9 +7,29 @@
 * Author URI: http://hackeryou.com
 */
 
+
+
+// MEDIA QUERY VARIABLES
+// ****************************
+
+$xs: new-breakpoint(max-width 600px);
+$sm: new-breakpoint(max-width 800px);
+$md: new-breakpoint(max-width 1050px);
+$lg: new-breakpoint(min-width 1051px);
+
+
+
+// BOURBON AND NEAT AND SETUP
+// ****************************
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import 'setup';
 @import 'normalize';
+
 @import 'typography';
 @import 'navigation';
+@import 'jumbotron';
+@import 'portfolio';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -33,9 +53,10 @@ body {
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	// float: left;
+	width: 80%;
+	// margin-right: 5%;
+	text-align:center
 }
 
 .full {

@@ -11,7 +11,7 @@ Portfolio Styling
 	position: relative;
 	padding-right: 22px;
 	border-right: 1px dotted #333;
-	height: 450px;
+	height: 460px;
 	@include span-columns(4);
 	@include omega(3n);
 
@@ -19,6 +19,23 @@ Portfolio Styling
 	  @include span-columns(12);
 	  border-right:0;
 
+	}
+	@media (max-width: 860px){	
+		height: 500px;
+
+	}
+	@include media($sm) {
+		height:450px;
+		margin-bottom: 50px;
+		border-bottom: 1px dotted #333;
+	}
+	h3 {
+		font-size: 25px;
+		font-weight: 400;
+	}
+	h4 {
+		font-size: 19px;
+		font-weight: 300;
 	}
 	ul {
 		padding: 0;
@@ -31,6 +48,9 @@ Portfolio Styling
 		display: inline-block;
 	}
 
+}
+.portfolio-item-title{
+	height: 58px;
 }
 
 .portfolio-item:nth-last-child(n+3) ~ .portfolio-item:last-child { 
@@ -51,5 +71,10 @@ Portfolio Styling
 	margin-top: 10px;
 	@include media($sm) {
 		margin-left: 25%;
+		bottom: 70px;
+	}
+	&:hover {
+		background: $accent-colour;
+		color:white;
 	}
 }

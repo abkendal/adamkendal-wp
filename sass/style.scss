@@ -29,6 +29,7 @@ $lg: new-breakpoint(min-width 1051px);
 
 $text-colour: #333;
 // $text-colour: white;
+$accent-colour: #6232CA;
 
 
 // IMPORT PARTIALS
@@ -52,6 +53,7 @@ Default Styling
 html,body {
     height:100%;
     // background: url(images/waves.jpg) fixed;
+    font-family: 'Roboto', sans-serif;
 }
 
 .jumbotron,
@@ -88,7 +90,30 @@ body {
 }
 
 
+/*
+====================================
+Sliding Underline
+====================================
+*/
 
+.sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: blue;
+}
 
 
 

@@ -3,12 +3,12 @@ $(function(){
 	// pink slush gradient
 	  var colors = new Array(
 
-	    [170,170,170], // light pink
-	    [170,170,170], // mid pink
-	    [170,170,170], // mid-dark grey
-	    [250,250,250], // white-pink
-	    [250,250,250], // white-pink
-	    [250,250,250]); // white-pink
+	    [180,180,180], // 
+	    [170,170,170], //
+	    [160,160,160], // 
+	    [250,250,250], // lightest grey
+	    [250,250,250], // lightest grey
+	    [250,250,250]); // lightest grey
 
 	  var step = 0;
 	  //color table indices for: 
@@ -20,10 +20,9 @@ $(function(){
 
 	  //transition speed
 	  // var gradientSpeed = 0.0025;
-	  var gradientSpeed = 0.0035;
+	  var gradientSpeed = 0.0040;
 
-	  function updateGradient()
-	  {
+	  function updateGradient() {
 	    
 	    if ( $===undefined ) return;
 	    
@@ -64,4 +63,33 @@ $(function(){
 
 	  setInterval(updateGradient,10);
 
+
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() > 100) { 
+	        $('.header-h1').css({
+	            'font-size': '1em'
+	    	});
+    	}
+	});
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() < 100) { 
+	        $('.header-h1').css({
+	            'font-size': '2em'
+	    	});
+    	}
+	});
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+

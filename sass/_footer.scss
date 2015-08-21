@@ -3,13 +3,30 @@ footer {
 }
 
 .contact {
-	padding-top: 100px;
-	background: darkgrey;
+	// padding: 120px 0;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 30px;
+	height: 100vh;
+	padding: 38vh 0;
+	h3 {
+		&:hover {
+				color: $accent-colour;
+			}
+	}
+	ul {
+		padding: none;
+	}
 	li {
 		list-style: none;
+		display: inline-block;
+		font-size: 47px;
+		a {
+			color: black;
+			&:hover {
+				color: $accent-colour;
+			}
+		}
 	}
 }
 .contact h3 {

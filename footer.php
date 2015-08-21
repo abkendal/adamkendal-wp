@@ -1,6 +1,11 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="container contact">
+    <h3>kendal.adam@gmail.com</h3>
+    <ul class="social-container">
+		<li><a href="https://twitter.com/abkendal"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="https://ca.linkedin.com/in/adamkendal"><i class="fa fa-linkedin-square"></i></a></li>
+	    <li><a href="https://github.com/abkendal"><i class="fa fa-github-square"></i></a></li>
+	</ul>
   </div>
 </footer>
 

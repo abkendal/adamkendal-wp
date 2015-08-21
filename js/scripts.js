@@ -2,7 +2,7 @@ $(function(){
 	
 	// pink slush gradient
 	  var colors = new Array(
-	  	
+
 	    [170,170,170], // light pink
 	    [170,170,170], // mid pink
 	    [170,170,170], // mid-dark grey
@@ -19,7 +19,8 @@ $(function(){
 	  var colorIndices = [0,1,2,3];
 
 	  //transition speed
-	  var gradientSpeed = 0.0025;
+	  // var gradientSpeed = 0.0025;
+	  var gradientSpeed = 0.0035;
 
 	  function updateGradient()
 	  {
@@ -61,6 +62,6 @@ $(function(){
 	    }
 	  }
 
-	  // setInterval(updateGradient,10);
+	  setInterval(updateGradient,10);
 
 });

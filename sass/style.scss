@@ -23,6 +23,18 @@ $sm: new-breakpoint(max-width 800px);
 $md: new-breakpoint(max-width 1050px);
 $lg: new-breakpoint(min-width 1051px);
 
+// COLOUR VARIABLES
+// ****************************
+// 
+
+$text-colour: #333;
+// $text-colour: white;
+
+
+// IMPORT PARTIALS
+// ****************************
+// 
+
 @import 'typography';
 @import 'navigation';
 @import 'jumbotron';
@@ -39,12 +51,15 @@ Default Styling
 
 html,body {
     height:100%;
+    // background: url(images/waves.jpg) fixed;
 }
 
 .jumbotron,
-.about,
-.portfolio {
+.about, {
 	height: 100vh;
+}
+.portfolio {
+	// height:200vh;
 }
 
 
@@ -53,7 +68,7 @@ img {
 }
 
 body {
-	color: #333;
+	color: $text-colour;
 }
 
 .container {

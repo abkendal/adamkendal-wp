@@ -3,17 +3,17 @@
 get_header();  ?>
 <?php get_template_part('jumbotron'); ?>
 <?php get_template_part('about'); ?>
-<div class="portfolio">
-  <div class="container">
+<div class="portfolio clearfix">
+  <div class="container clearfix">
 
-    <div class="content portfolio-content">
+    <div class="content portfolio-content  clearfix">
 
 
       <!-- Start of custom loop -->
       <?php  
         $portfolioArgs = array(
           'post_type' => 'portfolio',
-          'posts_per_page' => 3,
+          // 'posts_per_page' => 10,
           // 'orderby' => 'title',
           // 'order' => 'ASC'
         ); 

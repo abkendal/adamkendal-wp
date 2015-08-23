@@ -33,6 +33,15 @@ $accent-colour: #6232CA;
 // $accent-colour: rgba(179, 18, 18, 0.87);
 
 
+// FONT PARTIALS
+// ****************************
+// 
+@import 'HelveticaNeue';
+@import 'HelveticaNeueLight';
+@import 'HelveticaNeueThin';
+
+
+
 // IMPORT PARTIALS
 // ****************************
 // 
@@ -54,7 +63,9 @@ Default Styling
 html,body {
     height:100%;
     // background: url(images/waves.jpg) fixed;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'HelveticaNeue-Thin';
+    // letter-spacing: 1px;
 }
 
 .jumbotron,

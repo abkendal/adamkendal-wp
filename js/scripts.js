@@ -63,6 +63,8 @@ $(function(){
 
 	  // setInterval(updateGradient,10);
 
+
+	// Show top left h2 only when scrolled past the h1
 	$('.header-h2 a').hide();
 	$(window).scroll(function() {
 	    if ($(this).scrollTop() > 220) { 
@@ -75,6 +77,67 @@ $(function(){
     	}
 	});
 
+
+	// Stabilize the menu position during scrolling
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() < 220) { 
+	        $('.header-nav-container').css('top', '63px');
+    	}
+	});
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() > 220) { 
+	        $('.header-nav-container').css('top', '14px');
+    	}
+	});
+
+	// Golden Rec Special effects
+
+	$('.jumbo-img').on('click', function() {
+		$('#layer1').animate({opacity:1}, 600, function() {
+			$('#layer1').animate({opacity:'0'}, 600);
+			$('#layer2').animate({opacity:1}, 600, function(){
+				$('#layer2').animate({opacity:'0'}, 600);
+				$('#layer3').animate({opacity:1}, 600, function() {
+					$('#layer1').css('opacity', '');
+					$('#layer3').animate({opacity:'0'}, 600);
+					$('#layer4').animate({opacity:1}, 600, function() {
+						$('#layer2').css('opacity', '');
+						$('#layer4').animate({opacity:'0'}, 600);
+						$('#layer5').animate({opacity:1}, 600, function() {
+							$('#layer3').css('opacity', '');
+							$('#layer5').animate({opacity:'0'}, 600);
+							$('#layer6').animate({opacity:1}, 600, function() {
+								$('#layer4').css('opacity', '');
+								$('#layer6').animate({opacity:'0'}, 600);
+								$('#layer7').animate({opacity:1}, 600, function() {
+									$('#layer5').css('opacity', '');
+									$('#layer7').animate({opacity:'0'}, 600);
+									$('#layer8').animate({opacity:1}, 600, function() {
+										$('#layer6').css('opacity', '');
+										$('#layer8').animate({opacity:'0'}, 600);
+										$('#layer9').animate({opacity:1}, 600, function() {
+											$('#layer7').css('opacity', '');
+											$('#layer9').animate({opacity:'0'}, 600);
+											$('#layer10').animate({opacity:1}, 600, function() {
+												$('#layer8').css('opacity', '');
+												$('#layer10').animate({opacity:'0'}, 600);
+												$('#layer9').css('opacity', '');
+												$('#layer10').css('opacity', '');
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});
+
+
+
+		console.log('Click');
+	})
 
 
 

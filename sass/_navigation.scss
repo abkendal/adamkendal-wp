@@ -1,6 +1,14 @@
 // HEADER
 .header-h2 a{
 	font-size: 23px;
+	&:hover {
+		color: $accent-colour;
+	}
+
+}
+.header-nav-container {
+	position: relative;
+	top:63px;
 }
 .header-nav {
 	padding: 30px 0px 30px 20px;
@@ -8,7 +16,7 @@
 	top: 0;
 	width: 100%;
 	letter-spacing: 1px;
-	z-index: 100;
+	z-index: 10;
 	position: fixed;
 	.header-nav-container {
 		// position: fixed;

@@ -29,7 +29,8 @@ $lg: new-breakpoint(min-width 1051px);
 
 $text-colour: #333;
 // $text-colour: white;
-$accent-colour: #6232CA;
+// $accent-colour: #6232CA;
+$accent-colour: #8ea8d8;
 // $accent-colour: rgba(179, 18, 18, 0.87);
 
 
@@ -38,6 +39,7 @@ $accent-colour: #6232CA;
 // 
 @import 'HelveticaNeue';
 @import 'HelveticaNeueBold';
+@import 'HelveticaNeueCondensedBold';
 @import 'HelveticaNeueLight';
 @import 'HelveticaNeueThin';
 

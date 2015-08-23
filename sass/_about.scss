@@ -13,7 +13,11 @@ About Styling
     width: 80%;
     margin: 0 auto;
 }
-
+@media (max-width: 600px){
+	.about {
+		font-size: 1.9rem;
+	}
+}
 
 .about p {
 	text-align: center;

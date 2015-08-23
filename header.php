@@ -21,7 +21,7 @@
 <header>
   <div class="container">
     <div class="header-nav">
-      <h1 class="header-h1">
+      <h2 class="header-h2">
         <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
           <?php bloginfo( 'name' ); ?>
         </a>

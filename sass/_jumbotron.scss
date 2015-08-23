@@ -1,25 +1,31 @@
 .jumbotron {
-	// background: url(images/waves.jpg) fixed;
-}
-
-.jumbo-img {
-	height:375px;
-	width: 75%;
-	position: relative;
-	top: 152px;
-	left:25%;
-	z-index: 20;
-	svg {
-		width: 80%;
+	h1 {
+		font-family: 'HelveticaNeue-Bold';
+		margin:0;
+		font-size: 4.5vw;
+	}
+	h2 {
+		margin: 0;
+		font-size: 2.2vw;
+		letter-spacing: 2px;
 	}
 }
 
+.jumbo-img {
+	position:relative;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+.jumbo-txt {
+	position:absolute;
+	top: 39%;
+	left: 8%;
+	text-transform:uppercase;
+}
+
 .jumbo-header {
-	max-width: 60%;
-	font-size: 40px;
+	font-size: 5vw;
 	position: relative;
-	left: 17.6%;
-	font-weight: 900;
-	/*top: -152px;*/
 	z-index: 30;
 }

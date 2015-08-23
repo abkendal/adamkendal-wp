@@ -63,19 +63,15 @@ $(function(){
 
 	  // setInterval(updateGradient,10);
 
-
+	$('.header-h2 a').hide();
 	$(window).scroll(function() {
-	    if ($(this).scrollTop() > 100) { 
-	        $('.header-h1 a').css({
-	            'font-size': '23px'
-	    	});
+	    if ($(this).scrollTop() > 220) { 
+	        $('.header-h2 a').show();
     	}
 	});
 	$(window).scroll(function() {
-	    if ($(this).scrollTop() < 100) { 
-	        $('.header-h1 a').css({
-	            'font-size': '42px'
-	    	});
+	    if ($(this).scrollTop() < 220) { 
+	        $('.header-h2 a').hide();
     	}
 	});
 

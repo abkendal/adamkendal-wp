@@ -18,6 +18,7 @@
 // MEDIA QUERY VARIABLES
 // ****************************
 // 
+$xxs: new-breakpoint(max-width 450px);
 $xs: new-breakpoint(max-width 600px);
 $sm: new-breakpoint(max-width 800px);
 $md: new-breakpoint(max-width 1199px);

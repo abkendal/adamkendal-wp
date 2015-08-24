@@ -44,7 +44,7 @@
 		display: inline-block;
 		margin: 0px 30px;
 		font-size: 20px;
-		@include media($sm) {
+		@include media($xs) {
 			margin: 0;
 			font-size: 15px;
 		}
@@ -52,7 +52,7 @@
 	// @include media($xxs) {
 	// 	left:87%;
 	// }
-	@include media($sm) {
+	@include media($xs) {
 		transform: rotate(0deg);
 	    left: 0;
 	    top: -5vh;
@@ -75,24 +75,26 @@
 Sliding Underline
 ====================================
 */
+@media (min-width: 601px) {
 
-.header-nav li a {
-	display: inline-block;
-	position: relative;
-	padding-bottom: 3px;
-}
-.header-nav li a:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0px;
-	position: relative;
-	top: 6px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
-}
-.header-nav li a:hover:after {
-	width: 100%;
-	background: $accent-colour;
+	.header-nav li a {
+		display: inline-block;
+		position: relative;
+		padding-bottom: 3px;
+	}
+	.header-nav li a:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 3px;
+		width: 0px;
+		position: relative;
+		top: 6px;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+	.header-nav li a:hover:after {
+		width: 100%;
+		background: $accent-colour;
+	}
 }

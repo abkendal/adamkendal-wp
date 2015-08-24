@@ -1,4 +1,6 @@
-<div class="portfolio clearfix" id="work">
+<div id="work">
+</div>
+<div class="portfolio clearfix">
   <div class="container clearfix">
 
     <div class="content portfolio-content  clearfix">

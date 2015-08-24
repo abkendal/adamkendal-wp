@@ -11,6 +11,11 @@
 		letter-spacing: 2px;
 	}
 }
+@include media($xs) {
+	.jumbotron h2 {
+		letter-spacing: 1px;
+	}
+}
 
 .jumbo-container {
 }

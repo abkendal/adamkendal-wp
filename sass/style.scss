@@ -21,7 +21,7 @@
 $xs: new-breakpoint(max-width 600px);
 $sm: new-breakpoint(max-width 800px);
 $md: new-breakpoint(max-width 1199px);
-$lg: new-breakpoint(min-width 1200px);
+$lg: new-breakpoint(min-width 1350px);
 
 // COLOUR VARIABLES
 // ****************************
@@ -78,8 +78,10 @@ html,body {
 	}
 }
 
-.jumbotron,
-.about, {
+.jumbotron {
+	min-height: 100vh;
+}
+.about {
 	height: 100vh;
 }
 .portfolio {

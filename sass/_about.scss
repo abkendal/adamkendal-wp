@@ -13,10 +13,15 @@ About Styling
     width: 80%;
     margin: 0 auto;
 }
-@media (max-width: 600px){
-	.about {
-		font-size: 1.9rem;
-	}
+@include media($sm){
+    .about {
+        font-size: 1.9rem;
+    }
+}
+@include media($xs){
+    .about {
+        font-size: 1.6rem;
+    }
 }
 
 .about p {

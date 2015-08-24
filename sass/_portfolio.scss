@@ -11,13 +11,14 @@ Portfolio Styling
 	position: relative;
 	padding-right: 22px;
 	border-bottom: 1px dotted #333;
-	height: 300px;
+	height: 320px;
 	margin-bottom: 100px;
 	 @include outer-container;
 
 	@include media($sm) {
 		height: auto;
-		margin-bottom: 50px;
+		padding-bottom: 25px;
+		margin-bottom: 75px;
 		border-bottom: 1px dotted #333;
 	}
 	h3 {

@@ -20,8 +20,8 @@
 // 
 $xs: new-breakpoint(max-width 600px);
 $sm: new-breakpoint(max-width 800px);
-$md: new-breakpoint(max-width 1050px);
-$lg: new-breakpoint(min-width 1051px);
+$md: new-breakpoint(max-width 1199px);
+$lg: new-breakpoint(min-width 1200px);
 
 // COLOUR VARIABLES
 // ****************************
@@ -71,6 +71,13 @@ html,body {
     // letter-spacing: 1px;
 }
 
+@include media($lg) {
+	html, body {
+		font-family: 'HelveticaNeue-Light';
+		
+	}
+}
+
 .jumbotron,
 .about, {
 	height: 100vh;
@@ -89,7 +96,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1800px;
 	margin: 0 auto;
 }
 

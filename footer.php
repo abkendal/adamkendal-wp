@@ -1,5 +1,5 @@
 <footer>
-  <div class="container contact">
+  <div class="container contact" id="contact">
     <h3>kendal.adam@gmail.com</h3>
     <ul class="social-container">
 		<li><a href="https://twitter.com/abkendal"><i class="fa fa-twitter-square"></i></a></li>

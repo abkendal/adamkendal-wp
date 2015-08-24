@@ -24,27 +24,38 @@
             ?>
               <!-- Item content -->
               <div class="portfolio-item">
-                <div class="portfolio-item-title">
-                  <h3><?php the_title();?></h3>
-                </div>
-                <h4><?php the_field('project_name'); ?></h4>
-                <ul>
-                  <?php 
-                    while( has_sub_field('technologies') ) { 
-                  ?>
-                    <li>
-                      <?php the_sub_field('technology') ?>
-                    </li>
-                  <?php 
-                    } 
-                  ?>
-                </ul>
-                <?php the_content(); ?>
-                <a href="<?php the_field('live_url') ?>">
-                  <div class="view-live">
-                    VIEW IT LIVE
+                <div class="portfolio-item-sec portfolio-item-sec1">
+                  <div class="portfolio-item-title">
+                    <h3><?php the_title();?></h3>
                   </div>
-                </a> 
+                  <h4><?php the_field('project_name'); ?></h4>
+                  <ul>
+                    <?php 
+                      while( has_sub_field('technologies') ) { 
+                    ?>
+                      <li>
+                        <?php the_sub_field('technology') ?>
+                      </li>
+                    <?php 
+                      } 
+                    ?>
+                  </ul>
+                </div>
+                <div class="portfolio-item-sec portfolio-item-sec2">
+                  <?php the_content(); ?>
+                  <a href="<?php the_field('live_url') ?>">
+                    <div class="view-live">
+                      VIEW IT LIVE
+                    </div>
+                  </a> 
+                </div>
+                <div class="portfolio-item-sec portfolio-item-sec3">
+                  <?php 
+                    if ( has_post_thumbnail() ) {
+                      the_post_thumbnail('full');
+                    }  
+                  ?>
+                </div>
               </div>
               <!-- End of Item content -->
             <?php

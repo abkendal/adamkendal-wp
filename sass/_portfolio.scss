@@ -20,18 +20,25 @@ Portfolio Styling
 		padding-bottom: 25px;
 		margin-bottom: 75px;
 		border-bottom: 1px dotted #333;
+		p {
+			margin: 40px 0;
+		}
 	}
 	h3 {
 		font-size: 25px;
 		font-weight: 400;
 		margin: 0;
+		margin-bottom: 20px;
+		font-family: 'HelveticaNeue-Light';
 	}
 	h4 {
 		font-size: 20px;
 		font-weight: 300;
-		margin: 0
+		margin: 0;
+		margin: 10px 0;
 	}
 	ul {
+		margin: 30px 0;
 		padding: 0;
 	}
 	li {
@@ -40,10 +47,6 @@ Portfolio Styling
 		border: 1px solid black;
 		list-style: none;
 		display: inline-block;
-		// &:hover {
-		// 	border: 1px solid $accent-colour;
-		// 	color: $accent-colour;
-		// }
 	}
 	&:last-child {
 		margin-bottom: 0;
@@ -62,7 +65,7 @@ Portfolio Styling
 	}
 }
 .portfolio-item-title{
-	height: 58px;
+	
 }
 
 .view-live {
@@ -79,6 +82,7 @@ Portfolio Styling
 	@include media($sm) {
 		margin-left: 25%;
 		bottom: 70px;
+		margin-bottom: 20px;
 	}
 	&:hover {
 		background: $accent-colour;

@@ -15,7 +15,7 @@ footer {
 			}
 	}
 	ul {
-		padding: none;
+		padding: 0;
 	}
 	li {
 		list-style: none;
@@ -32,6 +32,6 @@ footer {
 .contact h3 {
 	font-weight: 700;
 	@include media($xs) {
-		font-size: 25px;
+		font-size: 20px;
 	}
 }

@@ -16,13 +16,13 @@
 </head>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="home">
 
 <header>
   <div class="container">
     <div class="header-nav">
       <h2 class="header-h2">
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+        <a href="#home" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
           <?php bloginfo( 'name' ); ?>
         </a>
       </h1>

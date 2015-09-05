@@ -72,6 +72,22 @@
 	text-transform:uppercase;
 
 }
+.jumbo-txt:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	position: relative;
+	top: 6px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.jumbo-txt:hover:after {
+	width: 100%;
+	background: $accent-colour;
+}
+
 
 .jumbo-header {
 	font-size: 5vw;

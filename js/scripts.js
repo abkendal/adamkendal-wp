@@ -1,5 +1,11 @@
+
+
+
+
+
+
+
 $(function(){
-	
 	// Smooth scroll
 	 $('a[href*=#]').click(function() {
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -76,7 +82,7 @@ $(function(){
 
 	  setInterval(updateGradient,10);
 
-	  //Inspired by Marlo Hwang
+	  //Inspiration from Marlo Hwang
 	  //Original gradient script by Mario Klingemann 
 
 
@@ -109,13 +115,16 @@ $(function(){
 
 
 	// Golden Rec Special effects
-	$('.jumbo-img').on('click', function() {
+
+	// Golden rec animation 
+
+	var goldenRec = function () {
 		$('#layer1').animate({opacity:1}, 600, function() {
 			$('#layer1').animate({opacity:'0'}, 600);
 			$('#layer2').animate({opacity:1}, 600, function(){
 				$('#layer2').animate({opacity:'0'}, 600);
 				$('#layer3').animate({opacity:1}, 600, function() {
-					$('#layer1').css('opacity', '');
+					$('#layer1').css('opacity', ''); // So that the hover effect still works after animation
 					$('#layer3').animate({opacity:'0'}, 600);
 					$('#layer4').animate({opacity:1}, 600, function() {
 						$('#layer2').css('opacity', '');
@@ -152,7 +161,17 @@ $(function(){
 				});
 			});
 		});
-	})
+	};	// End golden rec animation 
+
+	// Golden rec on click animation 
+	$('.jumbo-img').on('click', function() {
+		goldenRec();
+	}); 
+
+	setInterval(goldenRec, 9500);
+
+
+	
 });
 
 

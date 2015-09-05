@@ -1,4 +1,5 @@
 $(function(){
+	
 	// Smooth scroll
 	 $('a[href*=#]').click(function() {
 	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -15,27 +16,24 @@ $(function(){
 	     }
 	   });
 
-
-	// pink slush gradient
+	 // Shifting gradient background
 	  var colors = new Array(
 
-	    [180,180,180], // 
-	    [170,170,170], //
-	    [160,160,160], // 
-	    [250,250,250], // lightest grey
-	    [250,250,250], // lightest grey
-	    [250,250,250]); // lightest grey
+	    [180,180,180], //Light grey
+	    [170,170,170], //Mid grey
+	    [160,160,160], //Dark grey
+	    [255,255,255], //White
+	    [255,255,255], //White
+	    [255,255,255]); //White
 
 	  var step = 0;
-	  //color table indices for: 
 	  // current color left
 	  // next color left
 	  // current color right
 	  // next color right
 	  var colorIndices = [0,1,2,3];
 
-	  //transition speed
-	  // var gradientSpeed = 0.0025;
+	  // Transition speed
 	  var gradientSpeed = 0.0040;
 
 	  function updateGradient() {
@@ -69,15 +67,18 @@ $(function(){
 	      colorIndices[0] = colorIndices[1];
 	      colorIndices[2] = colorIndices[3];
 	      
-	      //pick two new target color indices
-	      //do not pick the same as the current one
+
 	      colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
 	      colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
 	      
 	    }
 	  }
 
-	  // setInterval(updateGradient,10);
+	  setInterval(updateGradient,10);
+
+	  //Inspired by Marlo Hwang
+	  //Original gradient script by Mario Klingemann 
+
 
 
 	// Show top left h2 only when scrolled past the h1
@@ -106,8 +107,8 @@ $(function(){
     	}
 	});
 
-	// Golden Rec Special effects
 
+	// Golden Rec Special effects
 	$('.jumbo-img').on('click', function() {
 		$('#layer1').animate({opacity:1}, 600, function() {
 			$('#layer1').animate({opacity:'0'}, 600);
@@ -136,9 +137,11 @@ $(function(){
 											$('#layer9').animate({opacity:'0'}, 600);
 											$('#layer10').animate({opacity:1}, 600, function() {
 												$('#layer8').css('opacity', '');
-												$('#layer10').animate({opacity:'0'}, 600);
-												$('#layer9').css('opacity', '');
-												$('#layer10').css('opacity', '');
+												$('#layer10').animate({opacity:'0'}, 600, function(){
+													$('#layer9').css('opacity', '');
+													$('#layer10').css('opacity', '');
+													
+												});
 											});
 										});
 									});
@@ -149,16 +152,7 @@ $(function(){
 				});
 			});
 		});
-
-
-
-		console.log('Click');
 	})
-
-
-
-
-
 });
 
 

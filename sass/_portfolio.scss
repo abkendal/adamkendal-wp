@@ -62,6 +62,17 @@ Portfolio Styling
 		@include span-columns(12);
 	}
 }
+.portfolio-item-sec2 {
+	padding-top: 2vw;
+	@include media($sm) {
+		padding-top: 0;
+	}
+	p {
+		@include media($sm) {
+			margin-top: 0;
+		}
+	}
+}
 .portfolio-item-sec3 {
 	@include media($sm) {
 		margin: 50px 0;

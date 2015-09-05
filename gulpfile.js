@@ -11,6 +11,7 @@ gulp.task('styles', function() {
 			'sourcemap=none': true,
 			errLogToConsole: true
 		}))
+		.pipe(autoprefixer())
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('.'));
 });

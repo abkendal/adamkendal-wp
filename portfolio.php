@@ -45,7 +45,7 @@
                 </div>
                 <div class="portfolio-item-sec portfolio-item-sec2">
                   <?php the_content(); ?>
-                  <a href="<?php the_field('live_url') ?>">
+                  <a href="<?php the_field('live_url') ?>" target="_blank">
                     <div class="view-live">
                       VIEW IT LIVE
                     </div>
